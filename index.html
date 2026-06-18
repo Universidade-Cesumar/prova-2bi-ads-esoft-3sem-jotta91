@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +8,42 @@
 </head>
 <body>
 
-    <h1>Controle de Almoxarifado</h1>
+    <div class="container">
 
-    <div class="formulario">
-        <input type="text" id="input-nome" placeholder="Nome do material">
+        <h1>Controle de Almoxarifado</h1>
 
-        <input type="number" id="input-quantidade" placeholder="Quantidade">
+        <div class="formulario">
+            <input type="text" id="input-nome" placeholder="Nome do material">
 
-        <button id="btn-cadastrar">
-            Cadastrar
-        </button>
+            <input type="number" id="input-quantidade" placeholder="Quantidade">
+
+            <button id="btn-cadastrar">
+                Cadastrar
+            </button>
+        </div>
+
+        <div class="retirada">
+            <input
+                type="number"
+                id="input-retirada"
+                placeholder="Quantidade para retirada">
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Material</th>
+                    <th>Quantidade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody id="lista-materiais"></tbody>
+        </table>
+
     </div>
 
-    <table>
-        <thead> 
-            <tr>
-                <th>Material</th>
-                <th>Quantidade</th>
-            </tr>
-        </thead>
-
-        <tbody id="lista-materiais"></tbody>
-    </table>
-
     <script src="main.js"></script>
+
 </body>
 </html>
