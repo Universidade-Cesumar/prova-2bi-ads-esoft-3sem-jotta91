@@ -49,7 +49,7 @@ button {
 .btn-baixar {
     background-color: #000000;
     margin-right: 5px;
-     color: white;
+    color: white;
 }
 
 .btn-excluir {
@@ -72,4 +72,16 @@ td {
     padding: 12px;
     border: 1px solid #ddd;
     text-align: center;
+}
+
+.estoque-critico {
+    background-color: #ffe5e5;
+    color: #b00020;
+    font-weight: bold;
+}
+
+#total-itens {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
 }
